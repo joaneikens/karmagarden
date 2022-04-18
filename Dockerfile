@@ -13,6 +13,7 @@ WORKDIR /app/backend
 COPY ./backend/requirements /app/backend/requirements
 RUN pip install -r requirements/production.txt
 
+
 # Install JS dependencies
 WORKDIR /app/frontend
 

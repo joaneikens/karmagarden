@@ -8,6 +8,9 @@ WORKDIR /app/backend
 COPY ./requirements /app/backend/requirements
 RUN pip install -r requirements/development.txt
 
+RUN apt-get update
+RUN apt-get install -y postgresql-client
+
 # Add the rest of the code
 COPY . /app/backend
 
