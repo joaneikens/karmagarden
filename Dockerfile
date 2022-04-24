@@ -24,7 +24,7 @@ RUN $HOME/.yarn/bin/yarn install
 COPY . /app
 
 # Build static files
-RUN $HOME/.yarn/bin/yarn build
+RUN $HOME/.yarn/bin/yarn start
 
 # Have to move all static files other than index.html to root/
 # for whitenoise middleware
