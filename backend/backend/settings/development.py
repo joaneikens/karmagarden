@@ -17,9 +17,12 @@ INSTALLED_APPS += [
 ]
 
 
+CORS_ORIGIN_ALLOW_ALL = True
+
 # White listing the localhost:3000 port
 # for React
-CORS_ORIGIN_WHITELIST = [
+CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://localhost:8000',
+    'http://127.0.0.1:8000,',
 ]

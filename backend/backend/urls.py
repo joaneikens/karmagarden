@@ -8,7 +8,6 @@ from questions import views
 router = routers.DefaultRouter()
 router.register(r'questions', views.QuestionView, 'question')
 
-print(router.urls)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
